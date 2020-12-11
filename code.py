@@ -12,11 +12,7 @@ import pandas as pd
 
 from sklearn.tree import DecisionTreeClassifier
 
-from sklearn.model_selection import train_test_split
-from sklearn.cluster import SpectralClustering
-from sklearn.cluster import KMeans
-from sklearn.svm import SVC
-import time
+
 
 
 class Random:
@@ -242,3 +238,4 @@ class SVM:
         pred = self.predict(x)
         return 1 - np.sum(np.abs((pred - y))) / len(y)
 
+# this is updated
